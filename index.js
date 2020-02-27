@@ -2,7 +2,6 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 const dateFormat = require('dateformat');
 const gutil = require('gulp-util');
-const token = 'NjgyNTQ5NzI4MjE0NjQ2ODg0.XleoAQ.5lMJegJYeC_9NzkMKf72K_1WHcs';
 
 const PREFIX = "a!";
 
@@ -129,4 +128,4 @@ bot.on('message', message=>{
     }
 })
 
-bot.login(token);
+bot.login(process.env.token);
